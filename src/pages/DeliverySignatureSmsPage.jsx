@@ -15,7 +15,7 @@ export function DeliverySignatureSmsPage() {
       <p style={{ ...body, margin: '8px 0 0' }}>
         Your insurance company requires your signature to confirm receipt. Sign here:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/delivery-confirmation-required'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jnjwithme.com/confirm-delivery/Yu2YquwuVw
+          https://jjdirect.com/confirm-delivery/Yu2YquwuVw
         </a>
       </p>
     </SmsMessageScreen>

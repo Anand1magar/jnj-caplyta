@@ -16,7 +16,7 @@ export function ShippingSmsPage() {
       <p style={{ ...body, margin: '8px 0 0' }}>
         Track your delivery here:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/shipped'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jnjwithme.com/track/Yu2YquwuVw
+          https://jjdirect.com/track/Yu2YquwuVw
         </a>
       </p>
     </SmsMessageScreen>

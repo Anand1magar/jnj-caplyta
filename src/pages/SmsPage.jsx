@@ -11,7 +11,7 @@ export function SmsPage() {
         {'\n'}- CAPLYTA
         {'\n\n'}Verify your information here:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/welcome'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jnjwithme.com/sign-up/dasyhk
+          https://jjdirect.com/sign-up/dasyhk
         </a>
       </p>
       <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919' }}>

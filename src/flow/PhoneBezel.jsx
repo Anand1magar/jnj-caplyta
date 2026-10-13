@@ -7,7 +7,7 @@ const BEZEL = 12;
 // Unlike DeviceFrame (fixed, viewport-sized, its own iPhone/Desktop toggle),
 // this sits inline inside a panel — same visual language, reusing
 // IOSStatusBar.
-export function PhoneBezel({ hostname = 'jnjwithme.com', width, height, hideStatusBar = false, children }) {
+export function PhoneBezel({ hostname = 'jjdirect.com', width, height, hideStatusBar = false, children }) {
   // iPhone 11's notch: fixed width/height regardless of frame size, unlike
   // an SE-style camera dot — Apple kept this exact notch through the 11/XR line.
   const notchWidth = Math.round(width * 0.35);

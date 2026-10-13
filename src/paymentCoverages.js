@@ -74,4 +74,4 @@ export const COVERAGE_BY_ID = Object.fromEntries(COVERAGES.map((c) => [c.id, c])
 export const DEFAULT_COVERAGE = COVERAGES[0].id;
 
 // The J&J patient assistance program the PAP banner links out to.
-export const PAP_URL = 'https://www.portal.jnjwithme.com/patient-assistance';
+export const PAP_URL = 'https://www.portal.jjdirect.com/patient-assistance';

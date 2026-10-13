@@ -8,7 +8,7 @@ const SCREEN_MAX_WIDTH = 600;
 
 function JourneyScreens() {
   return (
-    <DeviceFrame hostname="jnjwithme.com">
+    <DeviceFrame hostname="jjdirect.com">
       <Routes>
         {PAGES.map(([path, Page]) => (
           <Route
