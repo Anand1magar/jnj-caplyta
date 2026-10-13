@@ -8,7 +8,7 @@ import { JnjFooter as MyPhilFooter } from '../components/JnjFooter.jsx';
 // Short-form authorization supplied by the client for this brand, replacing the
 // base flow's long-form statement. [Client] resolves to the pharmacy name.
 const HIPAA_PARAGRAPHS = [
-  'By signing, I authorize my pharmacy, health plan and healthcare providers to share my health information with J&J Direct and its service providers to verify my insurance coverage, provide support services and contact me about my therapy. This authorization expires [date/event]. I may revoke it at any time in writing; revocation won’t affect actions already taken. My treatment won’t be conditioned on signing.',
+  'By signing, I authorize my pharmacy, health plan and healthcare providers to share my health information with PhilRx and its service providers to verify my insurance coverage, provide support services and contact me about my therapy. This authorization expires [date/event]. I may revoke it at any time in writing; revocation won’t affect actions already taken. My treatment won’t be conditioned on signing.',
 ];
 
 const NEXT_ROUTE = '/savings-enrollment';

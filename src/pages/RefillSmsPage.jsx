@@ -10,7 +10,7 @@ export function RefillSmsPage() {
   return (
     <SmsMessageScreen>
       <p style={body}>
-        J&J Direct:
+        PhilRx:
         {'\n'}Hi Patricia,
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>

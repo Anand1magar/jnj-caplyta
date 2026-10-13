@@ -16,7 +16,7 @@ export function PaApprovedSmsPage() {
         CAPLYTA
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>
-        We&rsquo;ll let you know once your cost is finalized and ready for you to view. Visit your J&J Direct account for updates:{' '}
+        We&rsquo;ll let you know once your cost is finalized and ready for you to view. Visit your PhilRx account for updates:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-approved'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
           https://jnjwithme.com/my-prescriptions
         </a>

@@ -20,7 +20,7 @@ export function CreatePasswordPage() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Create Password</h1>
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-            Select a secure password to protect your J&J Direct account.
+            Select a secure password to protect your PhilRx account.
           </p>
         </div>
 

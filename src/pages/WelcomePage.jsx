@@ -65,7 +65,7 @@ export function WelcomePage() {
         </div>
         <div style={{ borderTop: '1px solid var(--fade)' }} />
         <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-          Already have a J&J Direct account? <a href="#" style={{ color: 'var(--sky)', fontWeight: 700, textDecoration: 'underline' }}>Log in</a>
+          Already have a PhilRx account? <a href="#" style={{ color: 'var(--sky)', fontWeight: 700, textDecoration: 'underline' }}>Log in</a>
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export function WelcomePage() {
           title="What's next"
           steps={[
             'Confirm your information',
-            'J&J Direct will find your lowest price',
+            'PhilRx will find your lowest price',
             'Confirm your price, and we’ll ship your medication',
           ]}
         />

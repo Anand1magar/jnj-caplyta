@@ -7,7 +7,7 @@ import { Radio } from '@ds/components/forms/Radio/Radio.jsx';
 import { SignaturePad } from '@ds/components/domain/SignaturePad/SignaturePad.jsx';
 import { Icon } from '@ds/assets/icons/Icon.jsx';
 
-const SIGNATURE_CONSENT_FULL = `By signing electronically, I, {{.pt_consent_name}}, authorize J&J Direct and {{.pharmacy_name}} or another pharmacy in the J&J Direct network to coordinate with my medical provider and any applicable insurance and charge my credit card on file. I attest that I request to process and ship this medication and all subsequent refills, until such time as I cancel this automatic refill. Subsequent refills will be shipped on schedule automatically. Out of pocket effective as of [mm/dd/yyyy]. J&J Direct will contact to confirm any pricing changes.`;
+const SIGNATURE_CONSENT_FULL = `By signing electronically, I, {{.pt_consent_name}}, authorize PhilRx and {{.pharmacy_name}} or another pharmacy in the PhilRx network to coordinate with my medical provider and any applicable insurance and charge my credit card on file. I attest that I request to process and ship this medication and all subsequent refills, until such time as I cancel this automatic refill. Subsequent refills will be shipped on schedule automatically. Out of pocket effective as of [mm/dd/yyyy]. PhilRx will contact to confirm any pricing changes.`;
 
 const SIGNATURE_FAQ_ANSWER = `We collect your signature as required by your insurer to verify and confirm that you are only receiving prescriptions you really want. We won't fill your prescription without your approval.`;
 import applePayMark from '../assets/apple-pay-mark.svg';
