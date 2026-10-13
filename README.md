@@ -20,9 +20,16 @@ Opens at `/flow`, the journey navigator. `/` redirects there.
 
 ## Deploy it
 
+**Live: [jnj-caplyta-six.vercel.app](https://jnj-caplyta-six.vercel.app)** — `/flow` for the navigator.
+
 Vercel needs no configuration — `vercel.json` already sets the SPA rewrites and
 the framework preset is detected from `package.json`. Point Vercel at this repo
 and it builds.
+
+Note the `-six` suffix: `jnj-caplyta.vercel.app` is held by a **different Vercel
+account** and serves an older, unrelated mockup — the pre-PA version with no
+payment variants and no journey navigator. It does not build from this repo and
+pushing here does not update it. Check the live URL above, not that one.
 
 **On `ds/`:** it is a snapshot of the shared PhilRx design system, taken at
 export time. Upstream fixes do not reach this repo on their own — they arrive
