@@ -9,5 +9,23 @@ standalone repo and can't reach up to a monorepo root.
 26 files. Re-run the script from inside the monorepo after any
 shared design-system change; a standalone checkout needs nothing.
 
+## ⚠ Two files here are ahead of upstream — re-vendoring will destroy them
+
+`vendor-ds.mjs` starts with `rmSync(ds/)` and re-copies from the monorepo, so
+running it **silently reverts** the following and visibly breaks
+`/refill-review`. Upstream these two props do not exist, and a component that
+receives an unknown prop just ignores it — so there is no error, only a layout
+that quietly goes wrong.
+
+| File | Local addition | Who depends on it |
+|---|---|---|
+| `components/forms/Checkbox/Checkbox.jsx` | `iconStyle` prop; `alignItems: center` instead of `flex-start` | `RefillReviewPage.jsx` — the "Ship refills automatically" checkbox passes `iconStyle={{ marginTop: 5 }}` |
+| `components/forms/Radio/Radio.jsx` | `style` prop passthrough | `RefillReviewPage.jsx` — all three payment-method radios pass `style={{ padding: 0 }}` |
+
+Before re-vendoring, either land these two changes in the shared design system
+first (the real fix — they are generic API additions, not brand-specific), or
+re-apply them afterwards and re-run `scripts/record-journey.mjs` to confirm
+`/refill-review` still looks right.
+
 Brand-owned colors are NOT here — they live in `src/brand-theme.css`, which
 loads after `ds/styles.css` and overrides it.
