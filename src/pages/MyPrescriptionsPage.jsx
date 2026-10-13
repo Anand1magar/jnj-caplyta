@@ -33,7 +33,9 @@ export function MyPrescriptionsPage({ status = 'cost-ready' }) {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             <p style={{ fontSize: 14, color: 'var(--pitch)', margin: 0 }}>Status as of XX/XX/XX:</p>
-            <p style={{ fontSize: 16, fontWeight: 700, color: 'var(--foliage)', margin: 0 }}>{config.headline}</p>
+            {/* Status headline carries the brand primary, not the design-system
+                green — it reads as part of the CAPLYTA theme on every status. */}
+            <p style={{ fontSize: 16, fontWeight: 700, color: 'var(--brand-primary)', margin: 0 }}>{config.headline}</p>
 
             {config.paragraphs.map((text) => (
               <p key={text} style={{ fontSize: 14, lineHeight: '20px', color: 'var(--pitch)', margin: 0 }}>{text}</p>

@@ -29,8 +29,8 @@ export function SavingsEnrollmentPage() {
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px 80px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Terms and Conditions</h1>
-          <p style={{ fontSize: 16, lineHeight: '24px', letterSpacing: '0.024px', color: 'var(--pitch)', margin: 0 }}>
-            Join the thousands of patients saving by enrolling in the CAPLYTA withMe Savings Program.* Agree to the terms and conditions below and save.
+          <p style={{ fontSize: 14, lineHeight: '22px', letterSpacing: '0.024px', color: 'var(--pitch)', margin: 0 }}>
+            Agree and enroll with Me Savings Program
           </p>
         </div>
 
@@ -48,11 +48,10 @@ export function SavingsEnrollmentPage() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <Button hierarchy="primary" fullWidth onClick={() => navigate(NEXT_ROUTE)}>Agree and enroll</Button>
+          <Button hierarchy="primary" fullWidth onClick={() => navigate(NEXT_ROUTE)} style={{ fontSize: 12, lineHeight: '18px' }}>Agree and enroll with Me Savings Program</Button>
           <Button hierarchy="secondary" fullWidth onClick={() => setShowDeclineModal(true)}>Decline enrollment</Button>
         </div>
 
-        <p style={{ fontSize: 12, lineHeight: '24px', letterSpacing: '0.018px', color: 'var(--gunmetal)', margin: 0 }}>*Eligibility and savings depend on your insurance coverage.</p>
       </div>
 
       <MyPhilFooter />

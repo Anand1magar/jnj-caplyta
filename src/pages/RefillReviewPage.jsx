@@ -14,6 +14,8 @@ import paypalLogo from '../assets/paypal-logo.png';
 
 const SHIPPING_ADDRESS = { line1: '123 Main Street, Apt. 5', line2: 'San Francisco, CA 44512' };
 const SAVED_CARD = { brand: 'Mastercard', last4: '4242' };
+// Drives both the order-summary price line and the Confirm button, so the
+// two can't drift apart.
 const TOTAL = '$10';
 
 const SIGNATURE_FAQ_ANSWER = `We collect your signature as required by your insurer to verify and confirm that you are only receiving prescriptions you really want. We won't fill your prescription without your approval.`;
@@ -87,7 +89,7 @@ export function RefillReviewPage() {
           <SectionLabel>Order summary</SectionLabel>
           <p style={{ margin: 0, fontSize: 16, fontWeight: 700, lineHeight: '26px', color: 'var(--pitch)' }}>CAPLYTA</p>
           <OutlinedBox>
-            <p style={{ margin: 0, fontSize: 16, fontWeight: 700, lineHeight: '26px', color: 'var(--pitch)' }}>30 Day Supply with Coupon for $20</p>
+            <p style={{ margin: 0, fontSize: 16, fontWeight: 700, lineHeight: '26px', color: 'var(--pitch)' }}>30 Day Supply with Coupon for {TOTAL}</p>
             <p style={{ margin: 0, fontSize: 16, color: 'var(--pitch)' }}>
               <a href="#" onClick={(e) => e.preventDefault()} style={{ color: 'var(--sky)' }}>Learn more</a> about your cost
             </p>
@@ -105,7 +107,7 @@ export function RefillReviewPage() {
           </OutlinedBox>
           <p style={{ margin: 0, fontSize: 14, color: 'var(--pitch)' }}>
             Your prescription has{' '}
-            <span style={{ fontWeight: 700, fontStyle: 'italic', color: 'var(--foliage)' }}>FREE SHIPPING!</span>
+            <span style={{ fontWeight: 700, fontStyle: 'italic', color: 'var(--brand-primary)' }}>FREE SHIPPING!</span>
           </p>
         </div>
 

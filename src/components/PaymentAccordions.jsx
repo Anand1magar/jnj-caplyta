@@ -50,7 +50,9 @@ export function PaymentAccordions({ openSection: openProp, onOpenSectionChange }
   const [openInternal, setOpenInternal] = useState(null);
   const openSection = openProp !== undefined ? openProp : openInternal;
   const setOpenSection = onOpenSectionChange || setOpenInternal;
-  const [autoRefill, setAutoRefill] = useState(false);
+  // Checked by default on every screen that offers it — matches the refill
+  // review screen, and auto-refill is the enrolled-by-default preference.
+  const [autoRefill, setAutoRefill] = useState(true);
 
   const [paymentMethod, setPaymentMethod] = useState(null);
   const [cardNumber, setCardNumber] = useState('');
@@ -96,7 +98,7 @@ export function PaymentAccordions({ openSection: openProp, onOpenSectionChange }
                     <div style={{ borderTop: '1px solid var(--fade)', width: '100%', paddingTop: 12 }}>
                       <p style={{ margin: 0, fontSize: 14, color: 'var(--pitch)' }}>
                         Your prescription has{' '}
-                        <span style={{ fontWeight: 700, fontStyle: 'italic', color: 'var(--foliage)' }}>FREE SHIPPING!</span>
+                        <span style={{ fontWeight: 700, fontStyle: 'italic', color: 'var(--brand-primary)' }}>FREE SHIPPING!</span>
                       </p>
                     </div>
 

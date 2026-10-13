@@ -181,8 +181,8 @@ export const FLOW_STAGES = [
         trigger: 'The patient opens the login screen (reached from the payment link, or from the refill link after delivery).',
         action: 'The patient logs in with email and password, or chooses to verify with a one-time code instead. Either way the log-in finishes on the one-time code — a password alone never completes it.',
         leadsTo: [
-          { path: '/confirm-identity', label: '"Log In"' },
-          { path: '/otp-delivery', label: '"Log in with one-time code" — skips the identity step' },
+          { path: '/otp-delivery', label: '"Log In"' },
+          { path: '/otp-delivery', label: '"Log in with one-time code" — same destination, no password needed' },
         ],
         conditions: [
           { summary: 'Arrived from the refill SMS', detail: 'The link carries ?next=refill, which every screen in the chain forwards and only /otp-verify consumes, so verifying returns to Refill review instead of payment approval.' },
@@ -191,15 +191,17 @@ export const FLOW_STAGES = [
       {
         path: '/confirm-identity',
         title: 'Confirm identity',
-        trigger: 'The patient chooses the one-time code option on the login screen.',
+        trigger: 'Not on the live path — both log-in buttons now go straight to the one-time code. Kept here so the screen stays reviewable.',
         action: 'The patient enters their name and date of birth and submits, which dispatches a verification code to their email or phone, based on their preference.',
         leadsTo: [{ path: '/otp-delivery', label: '"Confirm"' }],
-        conditions: [],
+        conditions: [
+          { summary: 'Bypassed', detail: 'Per PM feedback, selecting "Log In" takes the patient to the one-time code screen instead of this identity step. Nothing in the app links here any more.' },
+        ],
       },
       {
         path: '/otp-delivery',
         title: 'OTP sent',
-        trigger: 'The patient submits the confirm-identity form.',
+        trigger: 'The patient selects either log-in button on the login screen.',
         action: 'A verification code is generated and delivered to the patient’s email or phone, based on their preference.',
         leadsTo: [{ path: '/otp-verify', label: '"Send Code"' }],
         conditions: [],

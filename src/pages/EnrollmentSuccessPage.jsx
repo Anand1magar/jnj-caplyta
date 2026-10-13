@@ -21,7 +21,9 @@ export function EnrollmentSuccessPage() {
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>What&rsquo;s next:</p>
           <div style={{ border: '1px solid var(--fade)', borderRadius: 4, padding: 16, boxSizing: 'border-box' }}>
             <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-              <img src={shieldHeartIcon} alt="" width={30} height={30} style={{ flexShrink: 0 }} />
+              <div style={{ width: 30, height: 30, borderRadius: 8, background: '#F2F7F9', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <img src={shieldHeartIcon} alt="" width={20} height={20} style={{ display: 'block', filter: 'brightness(0) saturate(100%) invert(18%) sepia(64%) saturate(1296%) hue-rotate(183deg) brightness(100%) contrast(101%)' }} />
+              </div>
               <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
                 We&rsquo;ll check with your insurance to find your cost and let you know when it&rsquo;s ready.
               </p>

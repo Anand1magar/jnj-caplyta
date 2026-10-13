@@ -72,10 +72,12 @@ authorization, payment approval, shipping & delivery, refills) — their copy wa
 written to match the professional register, not lifted from an approved source.
 Treat it as provisional until the PM sends those exports.
 
-`src/assets/caplyta-logo.svg` is a **placeholder** wordmark, per the brand spec —
-no real CAPLYTA trademark asset is committed. Swap that one file when the real
-mark arrives. The J&J footer mark (`src/assets/jnj-logo.svg`) is the real asset
-from the client's Figma file.
+`src/assets/caplyta-logo.svg` is the real CAPLYTA lockup — wordmark, J&J ribbon
+and the `(lumateperone) capsules` generic-name line, so it is wider and shorter
+than a bare wordmark (169×63, roughly 2.7:1). Both `BrandHeader` and
+`BrandAppHeader` render it at `height: 28`; much below that and the generic name
+stops being readable. The J&J footer mark (`src/assets/jnj-logo.svg`) is likewise the
+real asset from the client's Figma file.
 
 ## Screen flow
 

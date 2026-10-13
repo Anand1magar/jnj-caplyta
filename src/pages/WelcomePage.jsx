@@ -6,9 +6,6 @@ import { NextSteps } from '@ds/components/domain/NextSteps/NextSteps.jsx';
 import { BrandHeader as MyPhilHeader } from '../components/BrandHeader.jsx';
 import { ProgressBar } from '@ds/components/navigation/ProgressBar/ProgressBar.jsx';
 import { JnjFooter as MyPhilFooter } from '../components/JnjFooter.jsx';
-import trustpilotRating from '@ds/assets/images/trustpilot-rating.png';
-import bbbAccredited from '@ds/assets/images/bbb-accredited-business.jpg';
-import soc2Badge from '@ds/assets/images/soc2-badge.png';
 import hipaaVector from '@ds/assets/icons/hipaa-badge/hipaa-vector.svg';
 import hipaaLabel from '@ds/assets/icons/hipaa-badge/hipaa-label.svg';
 import compliantLabel from '@ds/assets/icons/hipaa-badge/compliant-label.svg';
@@ -25,7 +22,7 @@ const WHY_JNJ_DIRECT = [
 function HipaaBadge() {
   return (
     <div style={{ position: 'relative', width: 81, height: 40, flexShrink: 0 }}>
-      <div style={{ background: 'var(--foliage)', borderRadius: '1px 17px 1px 1px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '8px 13px 8px 8px', position: 'relative' }}>
+      <div style={{ background: 'var(--secondary)', borderRadius: '1px 17px 1px 1px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '8px 13px 8px 8px', position: 'relative' }}>
         <img src={hipaaVector} alt="" style={{ position: 'absolute', right: -8, top: 4, width: 16, height: 22 }} />
         <img src={hipaaLabel} alt="" style={{ width: 50, height: 13 }} />
         <img src={compliantLabel} alt="" style={{ width: 51, height: 7 }} />
@@ -78,11 +75,6 @@ export function WelcomePage() {
         <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
           Already have a J&J Direct account? <a href="#" style={{ color: 'var(--sky)', fontWeight: 700, textDecoration: 'underline' }}>Log in</a>
         </p>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <img src={trustpilotRating} alt="Trustpilot" style={{ height: 36 }} />
-          <img src={bbbAccredited} alt="BBB Accredited Business" style={{ height: 36 }} />
-          <img src={soc2Badge} alt="SOC 2 Type II" style={{ height: 44 }} />
-        </div>
       </div>
 
       <div style={{ width: '100%', boxSizing: 'border-box', padding: '0 16px 20px' }}>

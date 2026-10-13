@@ -41,7 +41,11 @@ export function LoginPage() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <Button hierarchy="primary" fullWidth onClick={() => navigate('/confirm-identity' + suffix)}>Log In</Button>
+          {/* Goes to the one-time code, not the confirm-identity step: a
+              password alone never completes a log-in, and the identity
+              questions add nothing once the patient has already typed the
+              password on their own account. */}
+          <Button hierarchy="primary" fullWidth onClick={() => navigate('/otp-delivery' + suffix)}>Log In</Button>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ flex: 1, height: 1, background: 'var(--fade)' }} />
@@ -49,9 +53,8 @@ export function LoginPage() {
             <div style={{ flex: 1, height: 1, background: 'var(--fade)' }} />
           </div>
 
-          {/* Skips the identity step and goes straight to the code. Either route
-              out of this screen ends at /otp-verify — password alone never
-              completes a log-in. */}
+          {/* Same destination as "Log In" above, reached without a password.
+              Either route out of this screen ends at /otp-verify. */}
           <Button hierarchy="secondary" fullWidth onClick={() => navigate('/otp-delivery' + suffix)}>Log in with one-time code</Button>
 
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--gunmetal)', margin: 0 }}>

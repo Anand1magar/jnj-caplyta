@@ -11,7 +11,7 @@ const TABS = [
 export function BrandAppHeader({ active }) {
   return (
     <div style={{ position: 'sticky', top: 0, zIndex: 10, width: '100%', height: 60, background: '#fff', borderBottom: '1px solid var(--fade)', display: 'flex', alignItems: 'stretch', justifyContent: 'space-between', paddingLeft: 17, boxSizing: 'border-box' }}>
-      <img src={caplytaLogo} alt="CAPLYTA" style={{ height: 20, alignSelf: 'center' }} />
+      <img src={caplytaLogo} alt="CAPLYTA" style={{ height: 28, alignSelf: 'center' }} />
       <div style={{ display: 'flex', alignItems: 'stretch' }}>
         {TABS.map((tab) => (
           <div
@@ -23,7 +23,7 @@ export function BrandAppHeader({ active }) {
               padding: '0 12px',
               boxSizing: 'border-box',
               background: active === tab.id ? '#f7f7f7' : 'transparent',
-              borderBottom: active === tab.id ? '4px solid #edbe3d' : '4px solid transparent',
+              borderBottom: active === tab.id ? '4px solid var(--secondary)' : '4px solid transparent',
             }}
           >
             <img src={tab.icon} alt="" style={{ width: 32, height: 32 }} />

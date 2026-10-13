@@ -21,11 +21,12 @@ export const COVERAGES = [
     description: 'Commercial insurance covers CAPLYTA. The manufacturer coupon brings the patient’s share to $0.',
     priceLine: '30 Day Supply for $0',
     total: '$0.00',
-    // Covered outright, so there is no "was $X" comparison to draw and no
-    // percentage worth badging — the note carries the message instead.
+    // Covered outright, so there is no "was $X" comparison to draw, no
+    // percentage worth badging, and no note: "30 Day Supply for $0" above
+    // "Your total cost $0.00" already says it.
     listPrice: null,
     discountLabel: null,
-    note: 'Covered by your insurance, with the manufacturer coupon applied.',
+    note: null,
     papBanner: false,
   },
   {
