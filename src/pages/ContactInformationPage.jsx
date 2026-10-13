@@ -4,7 +4,6 @@ import { Button } from '@ds/components/forms/Button/Button.jsx';
 import { TextInput } from '@ds/components/forms/TextInput/TextInput.jsx';
 import { Checkbox } from '@ds/components/forms/Checkbox/Checkbox.jsx';
 import { BrandHeader as MyPhilHeader } from '../components/BrandHeader.jsx';
-import { ProgressBar } from '@ds/components/navigation/ProgressBar/ProgressBar.jsx';
 import { JnjFooter as MyPhilFooter } from '../components/JnjFooter.jsx';
 
 const ADDRESS = { line1: '123 Main Street, Apt. 5', line2: 'San Francisco, CA 44512' };
@@ -61,7 +60,6 @@ export function ContactInformationPage() {
   return (
     <div style={{ width: '100%', minHeight: '100vh', boxSizing: 'border-box', background: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: 'var(--font-body)' }}>
       <MyPhilHeader />
-      <ProgressBar percent={50} />
 
       <div style={{ width: '100%', boxSizing: 'border-box', background: 'var(--paper)', padding: '8px 32px', display: 'flex', flexDirection: 'column', gap: 4 }}>
         <p style={{ fontSize: 16, fontWeight: 700, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>Do you have another insurance?</p>

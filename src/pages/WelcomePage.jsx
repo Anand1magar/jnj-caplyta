@@ -4,7 +4,6 @@ import { Button } from '@ds/components/forms/Button/Button.jsx';
 import { TextInput } from '@ds/components/forms/TextInput/TextInput.jsx';
 import { NextSteps } from '@ds/components/domain/NextSteps/NextSteps.jsx';
 import { BrandHeader as MyPhilHeader } from '../components/BrandHeader.jsx';
-import { ProgressBar } from '@ds/components/navigation/ProgressBar/ProgressBar.jsx';
 import { JnjFooter as MyPhilFooter } from '../components/JnjFooter.jsx';
 import hipaaVector from '@ds/assets/icons/hipaa-badge/hipaa-vector.svg';
 import hipaaLabel from '@ds/assets/icons/hipaa-badge/hipaa-label.svg';
@@ -41,7 +40,6 @@ export function WelcomePage() {
   return (
     <div style={{ width: '100%', background: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: 'var(--font-body)' }}>
       <MyPhilHeader />
-      <ProgressBar percent={17} />
 
       <div style={{ width: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 28, padding: '20px 16px 60px' }}>
         <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Welcome, {PATIENT_NAME}!</h1>
@@ -86,23 +84,6 @@ export function WelcomePage() {
             'Confirm your price, and we’ll ship your medication',
           ]}
         />
-      </div>
-
-      <div style={{ width: '100%', background: 'var(--paper)', padding: '24px 16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 24 }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <p style={{ fontSize: 18, fontWeight: 700, lineHeight: '28px', color: 'var(--pitch)', margin: 0 }}>Why should I use J&J Direct?</p>
-          <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-            J&J Direct coordinates with your doctor, your insurance company, and our network of partner pharmacies to work on finding your lowest cost and get your prescription filled. J&J Direct has:
-          </p>
-          <ul style={{ margin: 0, paddingLeft: 24, fontSize: 16, lineHeight: '24px', color: 'var(--pitch)' }}>
-            {WHY_JNJ_DIRECT.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-            J&J Direct is here to help manage your prescription!
-          </p>
-        </div>
       </div>
 
       <MyPhilFooter />

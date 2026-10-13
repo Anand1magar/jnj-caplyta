@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@ds/components/forms/Button/Button.jsx';
 import { SignaturePad } from '@ds/components/domain/SignaturePad/SignaturePad.jsx';
 import { BrandHeader as MyPhilHeader } from '../components/BrandHeader.jsx';
-import { ProgressBar } from '@ds/components/navigation/ProgressBar/ProgressBar.jsx';
 import { JnjFooter as MyPhilFooter } from '../components/JnjFooter.jsx';
 
 // Short-form authorization supplied by the client for this brand, replacing the
@@ -19,7 +18,6 @@ export function HipaaAuthorizationPage() {
   return (
     <div style={{ width: '100%', minHeight: '100vh', boxSizing: 'border-box', background: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: 'var(--font-body)' }}>
       <MyPhilHeader />
-      <ProgressBar percent={67} />
 
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px 147px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
