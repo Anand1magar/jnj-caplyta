@@ -17,7 +17,7 @@ export function PaDeniedSmsPage() {
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         We&rsquo;ll work to find and apply any manufacturer offers your prescription is eligible for. We&rsquo;ll let you know once your cost is ready. Visit your J&J Direct account for updates:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-denied'); }} style={{ color: '#00587D', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-denied'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
           https://jnjwithme.com/my-prescriptions
         </a>
       </p>

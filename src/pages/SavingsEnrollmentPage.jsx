@@ -36,8 +36,14 @@ export function SavingsEnrollmentPage() {
 
         {/* Taller than the base flow's 180px: this brand's terms run to three
             bullets, and at 180 the box reads as truncated copy rather than a
-            scrollable terms list. */}
-        <div style={{ height: 260, overflowY: 'auto', border: '2px solid var(--fade)', borderRadius: 4, padding: 16, boxSizing: 'border-box' }}>
+            scrollable terms list.
+
+            The left edge carries --secondary (#B587B8): this is the one
+            CAPLYTA withMe Savings Program surface in the enrollment funnel, and
+            the manufacturer program is exactly the kind of supporting content
+            the brand's secondary colour marks. Deliberately not on a CTA — the
+            primary owns every button in the flow. */}
+        <div style={{ height: 260, overflowY: 'auto', border: '2px solid var(--fade)', borderLeft: '4px solid var(--secondary)', borderRadius: 4, padding: 16, boxSizing: 'border-box' }}>
           <p style={{ fontSize: 14, lineHeight: '20px', letterSpacing: '0.035px', color: 'var(--pitch)', margin: 0, whiteSpace: 'pre-wrap' }}>{TERMS_TEXT}</p>
         </div>
 

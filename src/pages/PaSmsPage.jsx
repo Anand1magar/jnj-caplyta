@@ -20,7 +20,7 @@ export function PaSmsPage() {
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         No action is required from you. To learn more about the process, click here:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-required'); }} style={{ color: '#00587D', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-required'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
           https://jnjwithme.com/pa-faq
         </a>
       </p>

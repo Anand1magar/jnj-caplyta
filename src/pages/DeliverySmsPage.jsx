@@ -15,7 +15,10 @@ export function DeliverySmsPage() {
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         Your prescription was delivered on [delivered date]. Questions? Contact us{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/delivered'); }} style={{ color: '#00587D', textDecoration: 'underline' }}>
+        {/* Underlined, unlike the bare-URL links in the other SMS screens: this
+            one is an inline word ("here") inside a sentence, which needs the
+            underline to read as a link. Not an inconsistency — don't "fix" it. */}
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/delivered'); }} style={{ color: 'var(--sky)', textDecoration: 'underline' }}>
           here
         </a>.
       </p>

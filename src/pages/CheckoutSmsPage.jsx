@@ -12,7 +12,7 @@ export function CheckoutSmsPage() {
       </p>
       <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
         Complete your order:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login'); }} style={{ color: '#00587D', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
           https://jnjwithme.com/checkout/Yu2YquwuVw
         </a>
       </p>

@@ -15,7 +15,7 @@ export function ShippingSmsPage() {
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         Track your delivery here:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/shipped'); }} style={{ color: '#00587D', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/shipped'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
           https://jnjwithme.com/track/Yu2YquwuVw
         </a>
       </p>

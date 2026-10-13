@@ -24,7 +24,7 @@ export function RefillSmsPage() {
         {/* Through the log-in chain, not straight to the review: a returning
             patient has to authenticate first. ?next=refill brings them back
             here rather than to payment approval — see authNext.js. */}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login?next=refill'); }} style={{ color: '#00587D', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login?next=refill'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
           https://jnjwithme.com/refill/Yu2YquwuVw
         </a>
       </p>

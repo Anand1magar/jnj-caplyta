@@ -10,7 +10,7 @@ export function SmsPage() {
         J&J Direct: Your prescription from Dr. Ethan Caldwell has been received for:
         {'\n'}- CAPLYTA
         {'\n\n'}Verify your information here:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/welcome'); }} style={{ color: '#00587D', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/welcome'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
           https://jnjwithme.com/sign-up/dasyhk
         </a>
       </p>
