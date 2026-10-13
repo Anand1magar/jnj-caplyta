@@ -12,12 +12,6 @@ import hipaaVectorStroke from '@ds/assets/icons/hipaa-badge/hipaa-vector-stroke.
 
 const PATIENT_NAME = 'Patricia';
 
-const WHY_JNJ_DIRECT = [
-  'Automated refills that are processed and delivered as part of our auto-refill program',
-  'Free shipping with every delivery',
-  'Manufacturer offers that may be applied to lower your cost',
-];
-
 function HipaaBadge() {
   return (
     <div style={{ position: 'relative', width: 81, height: 40, flexShrink: 0 }}>
