@@ -167,6 +167,22 @@ for (const [, path] of SMS_SCREENS) {
   }
 }
 
+// Links inside a message bubble stay iOS system blue (#3478F6 — the same blue as
+// the back chevron), never the brand primary. A real phone renders them this
+// colour whatever the sender's branding, so a brand-coloured link would
+// misrepresent what the patient sees. Asserted because the natural instinct on
+// seeing a hardcoded hex is to "fix" it into var(--sky) — which is wrong here.
+for (const [, path] of SMS_SCREENS) {
+  await page.goto(BASE + path, { waitUntil: 'networkidle' });
+  const linkColor = await page.evaluate(() => {
+    const a = document.querySelector('a[href="#"]');
+    return a ? getComputedStyle(a).color : 'no-link';
+  });
+  if (linkColor !== 'rgb(52, 120, 246)') {
+    failures.push(`${path}: SMS link is ${linkColor}, expected iOS blue rgb(52, 120, 246)`);
+  }
+}
+
 // The journey side panel reports position.
 await page.goto(BASE + '/flow/welcome', { waitUntil: 'networkidle' });
 await page.waitForTimeout(400);

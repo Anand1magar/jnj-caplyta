@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { SmsMessageScreen } from '../components/SmsMessageScreen.jsx';
+import { SmsMessageScreen, SMS_LINK_BLUE } from '../components/SmsMessageScreen.jsx';
 
 export function CheckoutSmsPage() {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ export function CheckoutSmsPage() {
       </p>
       <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
         Complete your order:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
           https://jnjwithme.com/checkout/Yu2YquwuVw
         </a>
       </p>

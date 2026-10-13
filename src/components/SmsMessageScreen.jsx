@@ -10,6 +10,15 @@ import camera from '../assets/camera.svg';
 import appStore from '../assets/app-store.svg';
 import dictation from '../assets/dictation.svg';
 
+// iOS system blue, matching the back chevron in back-arrow.svg.
+//
+// Deliberately NOT var(--sky): links inside a message bubble are iOS platform
+// chrome, not brand surface. Every phone renders them this blue whatever the
+// sender's branding, so a brand-coloured link here would misrepresent what the
+// patient actually sees. The rest of this component hardcodes its iOS greys and
+// Arial for the same reason — these screens simulate the OS, they don't theme it.
+export const SMS_LINK_BLUE = '#3478F6';
+
 export function SmsMessageScreen({ contactLabel = '744-579', onBack, children }) {
   const navigate = useNavigate();
   const handleBack = onBack || (() => navigate(-1));

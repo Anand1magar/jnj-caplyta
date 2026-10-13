@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { SmsMessageScreen } from '../components/SmsMessageScreen.jsx';
+import { SmsMessageScreen, SMS_LINK_BLUE } from '../components/SmsMessageScreen.jsx';
 
 const body = { margin: 0, fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' };
 
@@ -14,7 +14,7 @@ export function DeliverySignatureSmsPage() {
       <p style={body}>J&J Direct: Your prescription was delivered.</p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         Your insurance company requires your signature to confirm receipt. Sign here:{' '}
-        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/delivery-confirmation-required'); }} style={{ color: 'var(--sky)', textDecoration: 'none' }}>
+        <a href="#" onClick={(e) => { e.preventDefault(); navigate('/delivery-confirmation-required'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
           https://jnjwithme.com/confirm-delivery/Yu2YquwuVw
         </a>
       </p>
