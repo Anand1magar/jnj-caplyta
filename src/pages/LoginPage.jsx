@@ -41,11 +41,11 @@ export function LoginPage() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          {/* Goes to the one-time code, not the confirm-identity step: a
-              password alone never completes a log-in, and the identity
-              questions add nothing once the patient has already typed the
-              password on their own account. */}
-          <Button hierarchy="primary" fullWidth onClick={() => navigate('/otp-delivery' + suffix)}>Log In</Button>
+          {/* Straight to the code entry, skipping both the confirm-identity
+              step and the delivery choice: the patient has just proved the
+              account is theirs with a password, so there is nothing left to
+              ask — the code goes to the contact method already on file. */}
+          <Button hierarchy="primary" fullWidth onClick={() => navigate('/otp-verify' + suffix)}>Log In</Button>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ flex: 1, height: 1, background: 'var(--fade)' }} />
@@ -53,8 +53,8 @@ export function LoginPage() {
             <div style={{ flex: 1, height: 1, background: 'var(--fade)' }} />
           </div>
 
-          {/* Same destination as "Log In" above, reached without a password.
-              Either route out of this screen ends at /otp-verify. */}
+          {/* No password, so the patient picks where the code should go first.
+              Both buttons end at /otp-verify; this one takes the longer way. */}
           <Button hierarchy="secondary" fullWidth onClick={() => navigate('/otp-delivery' + suffix)}>Log in with one-time code</Button>
 
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--gunmetal)', margin: 0 }}>

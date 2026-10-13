@@ -181,8 +181,8 @@ export const FLOW_STAGES = [
         trigger: 'The patient opens the login screen (reached from the payment link, or from the refill link after delivery).',
         action: 'The patient logs in with email and password, or chooses to verify with a one-time code instead. Either way the log-in finishes on the one-time code — a password alone never completes it.',
         leadsTo: [
-          { path: '/otp-delivery', label: '"Log In"' },
-          { path: '/otp-delivery', label: '"Log in with one-time code" — same destination, no password needed' },
+          { path: '/otp-verify', label: '"Log In" — the code goes to the contact method on file, so there is nothing to choose' },
+          { path: '/otp-delivery', label: '"Log in with one-time code" — no password, so the patient picks where to send it first' },
         ],
         conditions: [
           { summary: 'Arrived from the refill SMS', detail: 'The link carries ?next=refill, which every screen in the chain forwards and only /otp-verify consumes, so verifying returns to Refill review instead of payment approval.' },
