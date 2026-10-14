@@ -21,7 +21,7 @@ export function PaSmsPage() {
       <p style={{ ...body, margin: '8px 0 0' }}>
         No action is required from you. To learn more about the process, click here:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-required'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jjdirect.com/pa-faq
+          my.jnjdirect.com
         </a>
       </p>
     </SmsMessageScreen>

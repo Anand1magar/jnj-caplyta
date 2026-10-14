@@ -7,15 +7,17 @@ export function SmsPage() {
   return (
     <SmsMessageScreen>
       <p style={{ margin: 0, fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
-        J&J Direct: Your prescription from Dr. Ethan Caldwell has been received for:
-        {'\n'}CAPLYTA
-        {'\n\n'}Verify your information here:{' '}
+        Your prescription from your healthcare provider has been received
+        {'\n'}by J&J Direct.
+      </p>
+      <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
+        Click here to verify your information so we can process your prescription:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/welcome'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jjdirect.com/sign-up/dasyhk
+          enroll.jnjdirect.com
         </a>
       </p>
-      <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919' }}>
-        Note: Reply HELP for help or STOP to unsubscribe. About 4msgs/month. Msg&amp;Data rates may apply
+      <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
+        Need help by phone? Text back CALL and we will call you. Note: Reply HELP for help or STOP to unsubscribe.
       </p>
     </SmsMessageScreen>
   );

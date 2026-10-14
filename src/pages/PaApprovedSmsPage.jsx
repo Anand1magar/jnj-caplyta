@@ -18,7 +18,7 @@ export function PaApprovedSmsPage() {
       <p style={{ ...body, margin: '8px 0 0' }}>
         We&rsquo;ll let you know once your cost is finalized and ready for you to view. Visit your J&J Direct account for updates:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/pa-approved'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jjdirect.com/my-prescriptions
+          my.jnjdirect.com
         </a>
       </p>
     </SmsMessageScreen>

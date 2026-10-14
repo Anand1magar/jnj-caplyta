@@ -25,7 +25,7 @@ export function RefillSmsPage() {
             patient has to authenticate first. ?next=refill brings them back
             here rather than to payment approval — see authNext.js. */}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login?next=refill'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jjdirect.com/refill/Yu2YquwuVw
+          my.jnjdirect.com
         </a>
       </p>
     </SmsMessageScreen>

@@ -13,7 +13,7 @@ export function CheckoutSmsPage() {
       <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
         Complete your order:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/login'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
-          https://jjdirect.com/checkout/Yu2YquwuVw
+          my.jnjdirect.com
         </a>
       </p>
     </SmsMessageScreen>
