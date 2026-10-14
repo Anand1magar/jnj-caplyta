@@ -25,7 +25,7 @@ export const FLOW_STAGES = [
         path: '/welcome',
         title: 'Welcome & identity match',
         trigger: 'The patient opens the welcome link and submits their identifying details.',
-        action: 'PHILRx matches the submission against the prescription record and issues a session token on success.',
+        action: 'PHILRx matches the submission against the prescription record and issues a session token on success. A caregiver modal appears when relevant.',
         leadsTo: [{ path: '/insurance-details', label: 'Identity confirmed' }],
         conditions: [
           { summary: 'Caregiver flow excluded', detail: 'This brand omits the minor/caregiver modal the base flow carries, so every patient goes straight to Insurance details.' },
