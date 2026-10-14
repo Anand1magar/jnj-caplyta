@@ -45,7 +45,7 @@ export function OtpVerifyPage() {
 
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Enter Verification Code</h1>
+          <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Enter verification code</h1>
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
             We&rsquo;ve sent a one-time code by text message to (***)***-1301. Enter the code below to verify.
           </p>

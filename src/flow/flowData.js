@@ -394,7 +394,7 @@ export const FLOW_STAGES = [
         title: 'Refill — review and confirm',
         trigger: 'The patient finishes the log-in chain that the refill link started.',
         action: 'Payment approval for the refill, condensed into a single screen: order summary, shipping address, payment method, auto-refill preference, and signature all at once instead of the multi-step original-fill flow.',
-        leadsTo: [{ path: '/order-confirmation', label: '"Confirm $XX"' }],
+        leadsTo: [{ path: '/order-confirmation', label: '"Confirm $10"' }],
         conditions: [
           { summary: 'Loops back into Shipping & Delivery', detail: 'Confirming a refill produces an order like any other, so it rejoins the journey at Order confirmed and ships from there.' },
         ],

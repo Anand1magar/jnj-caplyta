@@ -24,7 +24,7 @@ export const FAQ_FULL = [
 ];
 
 export const FAQ_SHORT = [
-  "Why can't I see my prescription in my PhilRx account?",
+  "Why can't I see my prescription in my J&J Direct account?",
   'How do I get my receipt?',
 ];
 

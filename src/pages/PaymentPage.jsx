@@ -105,7 +105,7 @@ export function PaymentPage({ coverage = DEFAULT_COVERAGE }) {
           <p style={{ fontSize: 16, color: 'var(--pitch)', margin: 0 }}>Please select next to move to the next step.</p>
         )}
 
-        <PaymentAccordions openSection={openSection} onOpenSectionChange={setOpenSection} />
+        <PaymentAccordions openSection={openSection} onOpenSectionChange={setOpenSection} total={plan.total} />
       </div>
 
       <MyPhilFooter insuranceNote />
