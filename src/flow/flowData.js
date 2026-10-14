@@ -157,9 +157,8 @@ export const FLOW_STAGES = [
       {
         path: '/pa-denied',
         title: 'PA denied',
-        trigger: 'The patient opens their PHILRx account after the denial.',
-        trigger: 'The patient opens their PHILRx account after the denial.',
-        action: 'The prescription shows "Continue processing for your lowest cost", explaining the denial and pointing the patient at their insurer for coverage questions.',
+        trigger: 'The payer denies the request.',
+        action: 'The appeal workflow starts, and ops reviews it for a formulary exception or a peer-to-peer review.',
         leadsTo: [{ path: '/finalizing-cost', label: '"Manage your prescription"' }],
         conditions: [
           { summary: 'Feeds the Second Chance scenarios', detail: 'A denied PA is the situation the manufacturer-coupon scenarios in Payment Approval are built for — this is where that story starts.' },
