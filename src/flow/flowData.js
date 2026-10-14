@@ -13,8 +13,7 @@ export const FLOW_STAGES = [
       {
         path: '/sms',
         title: 'Rx received from doctor',
-        trigger: 'The prescribing doctor sends the prescription to PHILRx through BestRx.',
-        trigger: 'The prescribing doctor sends the prescription to PHILRx through BestRx.',
+        trigger: 'The prescribing doctor sends the prescription to J&J Direct through BestRx.',
         action: 'The order is created, the drug is validated, and the day-0 SMS timer starts.',
         leadsTo: [{ path: '/welcome', label: 'Patient taps the SMS link' }],
         conditions: [],
@@ -25,8 +24,7 @@ export const FLOW_STAGES = [
       {
         path: '/welcome',
         title: 'Welcome & identity match',
-        trigger: 'The patient opens the welcome link and submits their last name and date of birth.',
-        action: 'PHILRx matches the submission against the prescription record and issues a session token on success.',
+        trigger: 'The patient opens the welcome link and submits their identifying details.',
         action: 'PHILRx matches the submission against the prescription record and issues a session token on success.',
         leadsTo: [{ path: '/insurance-details', label: 'Identity confirmed' }],
         conditions: [
@@ -37,8 +35,7 @@ export const FLOW_STAGES = [
         path: '/insurance-details',
         title: 'Insurance details',
         trigger: 'The patient reaches the insurance step.',
-        action: 'PHILRx looks up the payer database and pre-fills the BIN, RxGroup, and PCN fields for the patient to confirm.',
-        action: 'PHILRx looks up the payer database and pre-fills the BIN, RxGroup, and PCN fields for the patient to confirm.',
+        action: 'PHILRx looks up the payer database and pre-fills the BIN, RxGroup, and PCN fields.',
         leadsTo: [{ path: '/contact-information', label: '"Use this insurance card"' }],
         conditions: [
           { summary: 'Card upload excluded', detail: 'This brand confirms the insurance already on file; the base flow\'s photo-upload branch is not part of the funnel.' },
@@ -47,7 +44,7 @@ export const FLOW_STAGES = [
       {
         path: '/contact-information',
         title: 'Contact information',
-        trigger: 'The patient confirms or updates their contact details.',
+        trigger: 'The patient submits their contact details.',
         action: 'A patient profile is created with address, communication preferences, and default allergy/medication history.',
         leadsTo: [{ path: '/hipaa-authorization', label: '"Next"' }],
         conditions: [
@@ -57,8 +54,8 @@ export const FLOW_STAGES = [
       {
         path: '/hipaa-authorization',
         title: 'HIPAA authorization',
-        trigger: 'The patient reviews and signs the HIPAA authorization.',
-        action: 'The signed authorization is stored and manufacturer data-sharing is activated.',
+        trigger: 'The patient signs the HIPAA authorization.',
+        action: 'The signed authorization is stored, manufacturer data-sharing is activated, and a 5-year expiry timer starts.',
         leadsTo: [{ path: '/savings-enrollment', label: '"Confirm" or "No thanks" (both continue)' }],
         conditions: [
           { summary: 'Optional', detail: '"No thanks" skips signing and still continues to the savings step — enrollment is not conditioned on authorizing.' },
@@ -86,7 +83,7 @@ export const FLOW_STAGES = [
         path: '/create-password',
         title: 'Create password',
         trigger: 'The patient has completed enrollment.',
-        action: 'The patient can optionally set a password for their profile. It isn\'t required — if they skip it, they can still log in later via a one-time code.',
+        action: 'The patient can optionally set a password for their profile. It isn\'t required — if they skip it, they can still log in later via a one-time code sent to their email or phone.',
         leadsTo: [{ path: '/pa-sms', label: '"Confirm"' }],
         conditions: [
           { summary: 'Prior Authorization is not always required', detail: 'This walkthrough always routes through the PA stage so the end-to-end story is visible. In the real product, a prescription that needs no PA goes straight from here to the "ready to ship" SMS.' },
