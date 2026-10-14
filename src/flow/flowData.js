@@ -304,9 +304,8 @@ export const FLOW_STAGES = [
       {
         path: '/shipped',
         title: 'Shipped',
-        trigger: 'The patient opens their PHILRx account while the order is in transit.',
-        trigger: 'The patient opens their PHILRx account while the order is in transit.',
-        action: 'The prescription shows "Shipped on [date]" with a tracking button. The FAQ switches from the cost questions to the shipping ones.',
+        trigger: 'The order\'s status updates to shipped.',
+        action: 'J&J Direct displays the estimated delivery date.',
         leadsTo: [{ path: '/delivery-sms', label: '"Track your prescription"' }],
         conditions: [],
       },
