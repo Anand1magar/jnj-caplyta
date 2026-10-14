@@ -113,9 +113,8 @@ export const FLOW_STAGES = [
       {
         path: '/pa-required',
         title: 'PA required',
-        trigger: 'The patient opens their PHILRx account while the PA is outstanding.',
-        trigger: 'The patient opens their PHILRx account while the PA is outstanding.',
-        action: 'The prescription shows "Prior Authorization - required by your insurance" with an explainer of what a PA is and a note that no action is needed from the patient.',
+        trigger: 'The formulary check comes back requiring prior authorization.',
+        action: 'PHILRx opens a PA request with the payer and texts the patient.',
         leadsTo: [
           { path: '/pa-approved-sms', label: 'Insurer approves the PA' },
           { path: '/pa-denied-sms', label: 'Insurer denies the PA' },
