@@ -139,9 +139,8 @@ export const FLOW_STAGES = [
       {
         path: '/pa-approved',
         title: 'PA approved',
-        trigger: 'The patient opens their PHILRx account after the approval.',
-        trigger: 'The patient opens their PHILRx account after the approval.',
-        action: 'The prescription shows "Prior Authorization approved - continue processing for your lowest cost".',
+        trigger: 'The payer approves the request.',
+        action: 'The order is released into the price-check and fulfillment queue.',
         leadsTo: [{ path: '/finalizing-cost', label: '"Manage your prescription"' }],
         conditions: [],
       },
