@@ -242,8 +242,7 @@ export const FLOW_STAGES = [
         path: '/my-prescriptions',
         title: 'My prescriptions',
         trigger: 'The patient logs in normally (desktop or standard login, not via the SMS link).',
-        action: 'The patient lands on their PHILRx profile and sees their prescription status with a "View your costs" button. Tapping it takes them straight to checkout, showing the finalized cost, payment, and price details.',
-        action: 'The patient lands on their PHILRx profile and sees their prescription status with a "View your costs" button. Tapping it takes them straight to checkout, showing the finalized cost, payment, and price details.',
+        action: 'The patient lands on their J&J Direct profile and sees their prescription status with a "View your costs" button. Tapping it takes them straight to checkout, showing the finalized cost, payment, and price details.',
         leadsTo: [
           { path: '/payment-scenarios', label: '"View your cost"' },
         ],
