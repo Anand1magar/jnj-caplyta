@@ -312,9 +312,8 @@ export const FLOW_STAGES = [
       {
         path: '/delivery-sms',
         title: 'SMS: Prescription delivered',
-        trigger: 'The courier marks the package delivered.',
-        action: 'PHILRx texts the patient that the prescription arrived. This one goes out on every delivery, whatever the insurer requires.',
-        action: 'PHILRx texts the patient that the prescription arrived. This one goes out on every delivery, whatever the insurer requires.',
+        trigger: 'The carrier scans the package.',
+        action: 'J&J Direct sends a shipment text with carrier tracking and a link to the medication guide.',
         leadsTo: [{ path: '/delivered', label: 'Patient taps the link' }],
         conditions: [],
         hideStatusBar: true,
