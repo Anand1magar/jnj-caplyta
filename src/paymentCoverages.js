@@ -62,9 +62,7 @@ export const COVERAGES = [
     total: '$450.00',
     listPrice: null,
     discountLabel: null,
-    // Why the coupon is unavailable here — the one thing that would otherwise
-    // read as a bug on this screen.
-    note: 'Manufacturer coupons cannot be used with government-sponsored insurance.',
+    note: null,
     papBanner: true,
   },
 ];
