@@ -167,9 +167,8 @@ export const FLOW_STAGES = [
       {
         path: '/finalizing-cost',
         title: 'Finalizing your cost',
-        trigger: 'The PA resolves, either way.',
-        action: 'PHILRx runs the claim and any applicable manufacturer offers to land on a final price. The patient waits; no action is needed.',
-        action: 'PHILRx runs the claim and any applicable manufacturer offers to land on a final price. The patient waits; no action is needed.',
+        trigger: 'The price is finalized.',
+        action: 'PHILRx finds the best price and texts a payment link to the patient.',
         leadsTo: [{ path: '/checkout-sms', label: 'Price is finalized' }],
         conditions: [
           { summary: 'Shared by both PA outcomes', detail: 'Approved and denied both arrive here — the difference is whether the insurer or a manufacturer offer is doing the work.' },
