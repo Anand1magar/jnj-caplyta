@@ -21,7 +21,7 @@ export function HipaaAuthorizationPage() {
 
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px 147px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>HIPAA Authorization</h1>
+          <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>HIPAA authorization</h1>
           <p style={{ fontSize: 16, lineHeight: '24px', letterSpacing: '0.024px', color: 'var(--pitch)', margin: 0 }}>
             To assist us in processing your prescription, please review and sign the HIPAA authorization below.
           </p>

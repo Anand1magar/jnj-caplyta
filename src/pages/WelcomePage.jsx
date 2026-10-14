@@ -36,11 +36,11 @@ export function WelcomePage() {
       <MyPhilHeader />
 
       <div style={{ width: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 28, padding: '20px 16px 60px' }}>
-        <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Welcome, {PATIENT_NAME}!</h1>
+        <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>Welcome, {PATIENT_NAME}</h1>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-            Dr. Ethan Caldwell sent your CAPLYTA prescription. Confirm your identity to continue.
+            Your CAPLYTA is ready. Dr. Ethan Caldwell sent your prescription to J&J Direct.
           </p>
           <TextInput label="Last name" placeholder="Last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
           <TextInput label="Date of birth (MM/DD/YYYY)" placeholder="Date of birth (MM/DD/YYYY)" value={dob} onChange={(e) => setDob(e.target.value)} />
@@ -65,7 +65,7 @@ export function WelcomePage() {
         </div>
         <div style={{ borderTop: '1px solid var(--fade)' }} />
         <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-          Already have a PhilRx account? <a href="#" style={{ color: 'var(--sky)', fontWeight: 700, textDecoration: 'underline' }}>Log in</a>
+          Already have a J&J Direct account? <a href="#" style={{ color: 'var(--sky)', fontWeight: 700, textDecoration: 'underline' }}>Log in</a>
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export function WelcomePage() {
           title="What's next"
           steps={[
             'Confirm your information',
-            'PhilRx will find your lowest price',
+            'J&J Direct will find your lowest price',
             'Confirm your price, and we’ll ship your medication',
           ]}
         />

@@ -10,8 +10,8 @@ export function ShippingSmsPage() {
   return (
     <SmsMessageScreen>
       <p style={body}>
-        PhilRx: Your prescription has shipped:
-        {'\n'}- CAPLYTA
+        J&J Direct: Your prescription has shipped:
+        {'\n'}CAPLYTA
       </p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         Track your delivery here:{' '}

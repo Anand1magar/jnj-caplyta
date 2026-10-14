@@ -49,7 +49,7 @@ export const PRESCRIPTION_STATUSES = {
   'pa-approved': {
     headline: 'Prior Authorization approved - continue processing for your lowest cost',
     paragraphs: [
-      "Good news! The Prior Authorization was approved. We'll continue processing to get your lowest cost.",
+      'The Prior Authorization was approved. We’ll continue processing to get your lowest cost.',
     ],
     notes: [],
     actions: [{ label: 'Manage your prescription', hierarchy: 'primary', to: '/finalizing-cost' }],

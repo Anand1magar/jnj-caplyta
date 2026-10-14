@@ -30,7 +30,7 @@ export function DeliveryConfirmationPage() {
         </div>
 
         <h1 style={{ fontSize: 20, fontWeight: 700, lineHeight: '28px', color: 'var(--pitch)', margin: 0 }}>
-          Your prescriptions were delivered today!
+          Your prescriptions were delivered today.
         </h1>
 
         <div style={{ width: '100%', boxSizing: 'border-box', border: '1px dashed var(--fade)', borderRadius: 4, padding: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>

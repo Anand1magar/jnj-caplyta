@@ -7,8 +7,8 @@ export function CheckoutSmsPage() {
   return (
     <SmsMessageScreen>
       <p style={{ margin: 0, fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
-        PhilRx: Your prescription is ready to ship:
-        {'\n\n'}- CAPLYTA
+        J&J Direct: Your prescription is ready to ship:
+        {'\n\n'}CAPLYTA
       </p>
       <p style={{ margin: '8px 0 0', fontFamily: 'Arial, sans-serif', fontSize: 16, lineHeight: 1.25, color: '#191919', opacity: 0.9, whiteSpace: 'pre-wrap' }}>
         Complete your order:{' '}

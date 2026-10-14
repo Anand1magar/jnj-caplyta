@@ -107,7 +107,7 @@ export function RefillReviewPage() {
           </OutlinedBox>
           <p style={{ margin: 0, fontSize: 14, color: 'var(--pitch)' }}>
             Your prescription has{' '}
-            <span style={{ fontWeight: 700, fontStyle: 'italic', color: 'var(--brand-primary)' }}>FREE SHIPPING!</span>
+            <span style={{ fontWeight: 700, fontStyle: 'italic', color: 'var(--brand-primary)' }}>Free shipping</span>
           </p>
         </div>
 

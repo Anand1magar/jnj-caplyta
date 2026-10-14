@@ -19,7 +19,7 @@ export function InsuranceDetailsPage() {
 
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px 80px' }}>
         <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>
-          Awesome! We found your insurance.
+          We found your insurance
         </h1>
 
         <div style={{ background: 'var(--paper)', borderRadius: 10, padding: '16px 19px 16px 10px', display: 'flex', flexDirection: 'column' }}>

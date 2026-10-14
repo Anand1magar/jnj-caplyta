@@ -36,7 +36,7 @@ export function PaymentPage({ coverage = DEFAULT_COVERAGE }) {
           <div style={{ borderTop: '1px solid var(--fade)', width: '100%' }} />
 
           <p style={{ fontSize: 20, fontWeight: 700, lineHeight: '28px', color: 'var(--pitch)', margin: 0 }}>
-            We found your best price on CAPLYTA!
+            We found your best price on CAPLYTA.
           </p>
 
           {/* Patient-assistance banner — uninsured and government coverage only.

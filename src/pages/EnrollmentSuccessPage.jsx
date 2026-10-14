@@ -14,7 +14,7 @@ export function EnrollmentSuccessPage() {
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px 120px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>
-            You did it! We&rsquo;re working on getting your best CAPLYTA price!
+            We&rsquo;re working on getting your best CAPLYTA price
           </h1>
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>What&rsquo;s next:</p>
           <div style={{ border: '1px solid var(--fade)', borderRadius: 4, padding: 16, boxSizing: 'border-box' }}>

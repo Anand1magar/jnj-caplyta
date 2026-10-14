@@ -14,7 +14,7 @@ export function OrderConfirmationPage() {
 
       <div style={{ width: '100%', flex: 1, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 20, padding: '20px 16px 60px' }}>
         <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: '36px', color: 'var(--pitch)', margin: 0 }}>
-          Success! Next step: Delivery
+          Success. Next step: Delivery
         </h1>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -26,7 +26,7 @@ export function OrderConfirmationPage() {
             <p style={{ margin: 0, fontSize: 16, lineHeight: '24px', color: 'var(--pitch)' }}>{SHIPPING_ADDRESS.line2}</p>
           </div>
           <p style={{ fontSize: 16, lineHeight: '24px', color: 'var(--pitch)', margin: 0 }}>
-            Free shipping is always included!
+            Free shipping is always included.
             <br />
             Tracking info will be shared once shipped.
           </p>

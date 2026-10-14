@@ -11,7 +11,7 @@ export function DeliverySignatureSmsPage() {
   const navigate = useNavigate();
   return (
     <SmsMessageScreen>
-      <p style={body}>PhilRx: Your prescription was delivered.</p>
+      <p style={body}>J&J Direct: Your prescription was delivered.</p>
       <p style={{ ...body, margin: '8px 0 0' }}>
         Your insurance company requires your signature to confirm receipt. Sign here:{' '}
         <a href="#" onClick={(e) => { e.preventDefault(); navigate('/delivery-confirmation-required'); }} style={{ color: SMS_LINK_BLUE, textDecoration: 'none' }}>
