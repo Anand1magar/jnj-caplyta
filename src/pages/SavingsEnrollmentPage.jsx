@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@ds/components/forms/Button/Button.jsx';
-import { DeclineEnrollmentModal } from '@ds/components/domain/DeclineEnrollmentModal/DeclineEnrollmentModal.jsx';
+import { DeclineSavingsOfferModal } from '../components/DeclineSavingsOfferModal.jsx';
 import { BrandHeader as MyPhilHeader } from '../components/BrandHeader.jsx';
 import { JnjFooter as MyPhilFooter } from '../components/JnjFooter.jsx';
 
@@ -54,7 +54,7 @@ export function SavingsEnrollmentPage() {
 
       <MyPhilFooter />
 
-      <DeclineEnrollmentModal
+      <DeclineSavingsOfferModal
         open={showDeclineModal}
         onClose={() => setShowDeclineModal(false)}
         onEnroll={() => { setShowDeclineModal(false); navigate(NEXT_ROUTE); }}
